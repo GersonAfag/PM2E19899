@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActividadLista">
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Atras..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="373dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtras" />
+
+    <ListView
+        android:id="@+id/listpersonas"
+        android:layout_width="308dp"
+        android:layout_height="262dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncompartir"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Compartir Contacto"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="615dp" />
+
+        <Button
+            android:id="@+id/btnver"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Ver Imagen Contacto"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="615dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnactualizar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Actualizar Contacto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btncompartir"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="6dp"
+            android:text="Eliminar Contacto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnver"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+</LinearLayout>
